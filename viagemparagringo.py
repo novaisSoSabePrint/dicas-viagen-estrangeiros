@@ -46,8 +46,8 @@ else:
 
 # Seção de sugestão de viagem
 st.header('26 Estados 26 Maravilhas!')
-st.write('Aqui vão 26 maravilhas que recomendamos visitar em sua passagem pelo Brasil.
-Uma em cada estado para que você fuja do convencional')
+st.write('''Aqui vão 26 maravilhas que recomendamos visitar em sua passagem pelo Brasil.
+Uma em cada estado para que você fuja do convencional''')
 
 # Fazer a solicitação para a página web
 r = requests.get("https://buzzfeed.com.br/post/todo-estado-brasileiro-tem-um-lugar-que-voce-precisa-visitar-antes-de-morrer")
