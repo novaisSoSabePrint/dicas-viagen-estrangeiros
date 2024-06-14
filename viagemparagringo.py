@@ -26,8 +26,8 @@ st.title('Brasil é o país mais bonito do mundo!')
 
 # Seção de cotações
 st.header('Conversor para moeda do Brasil(Real)') 
-st.write('Caso queira ter uma base de quanto levar em sua viajem, um turista gasta em media 300 Reais diários em solo brasileiro.
-Entretanto aconselhamos uma pesquisa mais aprofundada dos pontos turísticos a serem visitados.')
+st.write('''Caso queira ter uma base de quanto levar em sua viajem, um turista gasta em media 300 Reais diários em solo brasileiro.
+Entretanto aconselhamos uma pesquisa mais aprofundada dos pontos turísticos a serem visitados.''')
 rates = get_exchange_rates()
 if 'BRL' not in rates:
     st.error('Erro ao carregar a cotação do BRL.')
