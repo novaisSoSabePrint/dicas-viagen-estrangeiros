@@ -25,8 +25,9 @@ df_expenses = pd.DataFrame(expenses)
 st.title('Brasil é o país mais bonito do mundo!')
 
 # Seção de cotações
-st.header('Conversor para moeda do Barsil(Real)') 
-st.write('Para que você possa ter uma base de quanto levar em sua viajem, um turista gasta em media 300 Reais em solo brasileiro')
+st.header('Conversor para moeda do Brasil(Real)') 
+st.write('Caso queira ter uma base de quanto levar em sua viajem, um turista gasta em media 300 Reais diários em solo brasileiro.
+Entretanto aconselhamos uma pesquisa mais aprofundada dos pontos turísticos a serem visitados.')
 rates = get_exchange_rates()
 if 'BRL' not in rates:
     st.error('Erro ao carregar a cotação do BRL.')
@@ -44,7 +45,9 @@ else:
         st.error('Erro ao carregar a cotação da moeda selecionada.')
 
 # Seção de sugestão de viagem
-st.header('Sugestão de Viagem')
+st.header('26 Estados 26 Maravilhas!')
+st.write('Aqui vão 26 maravilhas que recomendamos visitar em sua passagem pelo Brasil.
+Uma em cada estado para que você fuja do convencional')
 
 # Fazer a solicitação para a página web
 r = requests.get("https://buzzfeed.com.br/post/todo-estado-brasileiro-tem-um-lugar-que-voce-precisa-visitar-antes-de-morrer")
