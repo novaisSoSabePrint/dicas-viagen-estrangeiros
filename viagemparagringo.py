@@ -22,7 +22,7 @@ expenses = {
 df_expenses = pd.DataFrame(expenses)
 
 # Interface com Streamlit
-st.title('Ache sua viagem perfeita!')
+st.title('Brazil is not just Christ the Redeemer')
 
 # Seção de cotações
 st.header('Cotações de Moedas') 
